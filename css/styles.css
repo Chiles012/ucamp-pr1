@@ -236,3 +236,37 @@ header {
 .contact-form form input, .contact-form form textarea {
     width: 92.5%;
 }
+
+/* Footer */
+footer {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 1rem;
+    padding: 2rem 0!important;
+    color: #000;
+}
+
+.social-media {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    gap: 1rem;
+}
+
+.social-media i {
+    font-size: 2rem;
+    color: #000!important;
+    transition: all 0.3s ease;
+}
+
+.social-media i:hover {
+    cursor: pointer;
+    scale: 1.1;
+}
+
+footer p {
+    margin: 0;
+    grid-column-start: 1;
+    grid-column-end: 3;
+    text-align: center;
+}
