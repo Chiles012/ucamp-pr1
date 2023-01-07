@@ -41,12 +41,39 @@ button {
     padding: 0.5rem 1rem;
     border-radius: 15px;
     transition: all 0.3s ease;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+button i {
+    color: #000;
 }
 
 button:hover {
     background-color: #000;
     color: #fff;
     scale: 1.1;
+}
+
+button:hover i {
+    color: #fff;
+}
+
+section {
+    padding: 2rem 0;
+    background-color: #000;
+}
+
+input, textarea {
+    background-color: #fff;
+    color: #000;
+    padding: 0.5rem 1rem;
+    border-radius: 15px;
+    border: none;
+    width: 100%;
+    margin-bottom: 1rem;
+    margin-top: 0.5rem;
 }
 
 /* Header */
@@ -96,4 +123,116 @@ header {
     left: 0;
     right: 0;
     width: 100%;
+}
+
+/* Nuestros Servicios */
+.services {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 1rem;
+    margin-top: 2rem;
+}
+
+.service {
+    background-color: #fff;
+    padding: 1rem;
+    border-radius: 15px;
+    transition: all 0.3s ease;
+    color: #000;
+}
+
+.service > i {
+    font-size: 4rem;
+    margin-bottom: 1rem;
+    color: #000;
+}
+
+.service:hover {
+    background-color: #000;
+    color: #fff;
+    cursor: pointer;
+}
+
+.service:hover > i {
+    color: #fff;
+}
+
+/* Galeria */
+.pictures {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 1rem;
+    margin-top: 2rem;
+}
+
+.picture {
+    background-image: url(../assets/gym.png);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    height: auto;
+    min-height: 200px;
+    transition: all 0.3s ease;
+    position: relative;
+}
+
+.picture:hover {
+    cursor: pointer;
+    scale: 1.05;
+}
+
+.picture:hover .picture-overflow {
+    opacity: 0.5;
+}
+
+.picture-overflow {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    width: 100%;
+    background-color: #fff;
+    opacity: 0;
+    transition: all 0.3s ease;
+}
+
+.picture:nth-child(1) {
+    grid-column-start: 1;
+    grid-column-end: 3;
+    grid-row-start: 1;
+    grid-row-end: 4;
+}
+
+.picture:nth-child(6) {
+    grid-column-start: 3;
+    grid-column-end: 5;
+}
+
+/* Contactanos */
+.contact {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 1rem;
+}
+
+.contact-info-item {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+}
+
+.contact-form form {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 1rem;
+}
+
+.contact-form form input, .contact-form form textarea {
+    width: 92.5%;
 }

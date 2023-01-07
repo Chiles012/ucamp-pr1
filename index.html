@@ -12,17 +12,17 @@
     <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link href="https://fonts.googleapis.com/css2?family=Roboto+Condensed:wght@300;700&display=swap" rel="stylesheet">
 </head>
 <body>
-    <header>
+    <header id="home">
         <div class="navbar container">
             <div class="logo">
                 <img src="./assets/dumbbell.png" alt="logo">
             </div>
             <nav>
                 <ul>
-                    <li class="active"><a href="#">Home</a></li>
-                    <li><a href="#">About</a></li>
-                    <li><a href="#">Services</a></li>
-                    <li><a href="#">Contact</a></li>
+                    <li class="active"><a href="#home">Home</a></li>
+                    <li><a href="#our-services">Services</a></li>
+                    <li><a href="#gallery">Gallery</a></li>
+                    <li><a href="#contact">Contact</a></li>
                 </ul>
             </nav>
             <i class="bi bi-person-circle"></i>
@@ -31,10 +31,100 @@
             <div class="container">
                 <h1>Get fit with us</h1>
                 <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, quae.</p>
-                <button class="btn btn-primary">Get Started</button>
+                <button>Get Started</button>
             </div>
         </div>
     </header>
+    <main>
+        <section id="our-services">
+            <div class="container">
+                <h2>
+                    Our Services
+                </h2>
+                <div class="services">
+                    <div class="service">
+                        <i class="bi bi-card-image"></i>
+                        <h3>Weightlifting</h3>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, quae.</p>
+                        <button>Read more <i class="bi bi-arrow-right-short"></i></button>
+                    </div>
+                    <div class="service">
+                        <i class="bi bi-card-image"></i>
+                        <h3>Weightlifting</h3>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, quae.</p>
+                        <button>Read more <i class="bi bi-arrow-right-short"></i></button>
+                    </div>
+                    <div class="service">
+                        <i class="bi bi-card-image"></i>
+                        <h3>Weightlifting</h3>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, quae.</p>
+                        <button>Read more <i class="bi bi-arrow-right-short"></i></button>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section id="gallery">
+            <div class="container">
+                <h2>Gallery</h2>
+                <div class="pictures">
+                    <div class="picture">
+                        <div class="picture-overflow"></div>
+                    </div>
+                    <div class="picture">
+                        <div class="picture-overflow"></div>
+                    </div>
+                    <div class="picture">
+                        <div class="picture-overflow"></div>
+                    </div>
+                    <div class="picture">
+                        <div class="picture-overflow"></div>
+                    </div>
+                    <div class="picture">
+                        <div class="picture-overflow"></div>
+                    </div>
+                    <div class="picture">
+                        <div class="picture-overflow"></div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section id="contact">
+            <div class="container">
+                <h2>Contact</h2>
+                <div class="contact">
+                    <div class="contact-info">
+                        <h3>Get in touch</h3>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, quae.</p>
+                        <div class="contact-info-item">
+                            <i class="bi bi-geo-alt"></i>
+                            <p>1234 Street Name, City Name, United States</p>
+                        </div>
+                        <div class="contact-info-item">
+                            <i class="bi bi-telephone"></i>
+                            <p>123-456-7890</p>
+                        </div>
+                        <div class="contact-info-item">
+                            <i class="bi bi-envelope"></i>
+                            <p>
+                                <a href="mailto:sersan.christian@gmail.com">
+                                    sersan.christian@gmail.com
+                                </a>
+                            </p>
+                        </div>
+                    </div>
+                    <div class="contact-form">
+                        <h3>Send us a message</h3>
+                        <form action="">
+                            <input type="text" placeholder="Name">
+                            <input type="email" placeholder="Email">
+                            <textarea name="" id="" cols="30" rows="10" placeholder="Message"></textarea>
+                            <button>Send</button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
     <footer>
 
     </footer>
